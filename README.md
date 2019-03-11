@@ -1,4 +1,4 @@
-# magic-square-generation
+# magic-square-generator
 Un module Node.js pour générer un carré magique
 ## Installation 
 ```sh
