@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Remi13100/magic-square-generator.svg?branch=master)](https://travis-ci.org/Remi13100/magic-square-generator)
+
 # magic-square-generator
 Un module Node.js pour générer un carré magique
 ## Installation 
