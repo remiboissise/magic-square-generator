@@ -9,11 +9,13 @@
     "dist"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "pack": "tsc && npm pack"
+    "pack": "tsc && npm pack",
+    "test": "mocha --reporter spec"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
     "typescript": "^2.4.2"
   },
   "license": "ISC"
