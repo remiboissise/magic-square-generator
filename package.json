@@ -1,0 +1,20 @@
+{
+  "name": "magic-square-generator",
+  "version": "1.0.0",
+  "author": "Rémi Boissise <developer.remi@gmail.com>",
+  "description": "Magic square generator",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "pack": "tsc && npm pack"
+  },
+  "devDependencies": {
+    "typescript": "^2.4.2"
+  },
+  "license": "ISC"
+}
