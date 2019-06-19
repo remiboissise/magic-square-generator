@@ -1,12 +1,11 @@
 export class MagicSquare 
 {
     // Dimension du carré magique (à renseigner) 
-    private dimSquare                :   number = 3;
-
-    private n                       :   number;
-    private somme                   :   number;
-    private sol                     :   number[][];
-    private dejaPris                :   boolean[];
+    private dimSquare                   :   number = 3;
+    private n                           :   number;
+    private somme                       :   number;
+    private sol                         :   number[][];
+    private dejaPris                    :   boolean[];
 
     constructor(dimension ?: number){ 
         this.dimSquare = (dimension >= 3) ? dimension : this.dimSquare;
@@ -24,14 +23,11 @@ export class MagicSquare
     // Génération d'un carré magique
     public generate() : Promise<number[][] | null>
     {
-        console.time();
         this.n = this.dimSquare * this.dimSquare;
         var sommeN2 : number = (this.n * (this.n + 1)) / 2;
         this.somme = sommeN2 / this.dimSquare;
         this.dejaPris = new Array<boolean>(this.n + 1);
         if (this.solve(0, 0, 0)) {
-            console.log('Magic square : ', this.sol);
-            console.timeEnd();
             return Promise.resolve(this.sol);
         }
         return Promise.reject('Pas de résultat');
